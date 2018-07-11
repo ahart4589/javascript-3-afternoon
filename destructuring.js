@@ -22,6 +22,8 @@ var carDetails = {
 */
 
 //Code Here
+let {color,make,model,year} = carDetails
+
 
 
 
@@ -35,6 +37,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
+  let {firstName,lastName,title} = obj
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -54,7 +57,17 @@ function greeting( obj ) {
 */
 
 //Code Here
+var statePop ={
+  utah: 9,
+  california:17,
+  texas: 15,
+  arizona: 12
+}
 
+function totalPopulation(statePop){
+  let{utah,california,texas,arizona} = statePop
+  return utah + california + texas + arizona
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -68,6 +81,18 @@ function greeting( obj ) {
 */
 
 //Code Here
+// let nutr = {
+//   carb: "bread",
+//   fat: "avocado",
+//   protein: "beans"
+// }
+
+function ingredients(obj){
+  let arrNutr = [];
+  let{carb,fat,protein } = obj
+    arrNutr.push(carb,fat,protein)
+  return arrNutr;
+}
 
 
 
