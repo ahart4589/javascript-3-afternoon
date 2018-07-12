@@ -159,7 +159,12 @@ var myCar = {
 */
 
 //Code Here
-
+function recordCleaner(){
+  for(var i=0;i<myCar.accidents.length;i++){
+    myCar.accidents[i].atFaultForAccident = false;
+  }
+  // myCar.accidents[i].atFaultForAccident[key]
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -179,4 +184,16 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
 //Code Here
 
-
+function looper(){
+  for(var i=0;i<numsArr.length;i++){
+    for(var j=0;j<numsArr[i].length;j++){
+      debugger;
+      if(numsArr[i][j]%2!==0){
+        numsArr[i][j] = 'odd';
+      }
+      else {
+        numsArr[i][j] = 'even';
+      }
+    }
+  }return numsArr
+}
