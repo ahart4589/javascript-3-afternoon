@@ -51,6 +51,17 @@ var employees = [
 */
 
 //Code Here
+function employeeUpdater(){
+  for(var i=0;i<employees.length;i++){
+      if(employees[i].firstName==='Theo'){
+       employees.splice(i,1);
+    }
+      if(employees[i].firstName==='Lorie'){
+      employees[i].department = 'HR'
+    }
+  
+  }return employees;
+}
 
 
 
@@ -69,7 +80,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
+function removeDuplicates(){
+  for(var i=0;i<workplaceAccidents.length;i++){
+    for(var j=i+1;j<workplaceAccidents.length;j++){
+      if(workplaceAccidents[i]===workplaceAccidents[j]){
+        workplaceAccidents.splice(i,1)
+        j--
+      }
+    }
+  }return workplaceAccidents
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -97,8 +117,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1]
+var fluffy2ndFriend = cat.catFriends[1].name
 
 
 
