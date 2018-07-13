@@ -156,6 +156,11 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
+for(var key in deleteTheBigNumbers){
+  if(deleteTheBigNumbers[key]>100){
+    delete deleteTheBigNumbers[key];
+  }
+}
 
 
 
@@ -169,6 +174,14 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
+function startsWithK(obj){
+  for(var key in obj){
+    if(key.startsWith('k')){
+      delete obj[key];
+    }
+  }return obj;
+}
+
 
 
 
@@ -184,5 +197,15 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
+function hiddenTreasure(obj){
+  for(var key in obj){
+    if(!obj[key].includes('treasure')){
+      delete obj[key];
+    }
+  }return obj;
+}
 
-
+// // var hiddenTreasure = {
+//   book:"I love buried treasure";
+//   movie:"I love screen time"
+// }
