@@ -111,6 +111,17 @@ function ingredients(obj){
 */
 
 //Code Here
+function largeNumbers({first,second,third}){
+  if(first<second && first<third){
+    return first
+  }
+  if(second<first && second<third){
+    return second
+  }
+  if(third<first && third<second){
+    return third
+  }
+}
 
 
 
@@ -123,5 +134,20 @@ function ingredients(obj){
 */
 
 //Code Here
+function numberGroups({a,b,c}){
+  if(a.length>b.length && a.length>c.length){
+    return a;
+  }else if(b.length>a.length && b.length>c.length){
+    return b;
+  }else{
+    return c;
+  }
+}
 
 
+
+// let numberObjs = {
+//   a: [1,2,3],
+//   b: [4,5,6],
+//   c: [7,8,9]
+// }
